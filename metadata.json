@@ -1,0 +1,5 @@
+{
+  "name": "Esart Pharmacy Management System",
+  "description": "Pharmacy management system for Esart Pharmacy Uganda: POS, FEFO batch inventory, expiry control, NDA controlled register, wholesale, URA EFRIS fiscal records, approvals and reports.",
+  "requestFramePermissions": []
+}

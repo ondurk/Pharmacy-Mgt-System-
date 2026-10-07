@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1e293b;
+    background-color: #0b1018;
+  }
+}
+
+/* Esart Pharmacy dark operating console */
+.pharmacy-dark .bg-white {
+  background-color: #242424 !important;
+  color: #e5e7eb !important;
+  border-color: #4b5563 !important;
+}
+.pharmacy-dark .bg-slate-50,
+.pharmacy-dark .bg-slate-100,
+.pharmacy-dark .bg-slate-100\/70 {
+  background-color: #1d2229 !important;
+}
+.pharmacy-dark .text-slate-900,
+.pharmacy-dark .text-slate-800,
+.pharmacy-dark .text-slate-700 {
+  color: #f8fafc !important;
+}
+.pharmacy-dark .text-slate-600,
+.pharmacy-dark .text-slate-500,
+.pharmacy-dark .text-slate-400 {
+  color: #aeb6c2 !important;
+}
+.pharmacy-dark .border-slate-200,
+.pharmacy-dark .border-slate-100 {
+  border-color: #4b5563 !important;
+}
+.pharmacy-dark input,
+.pharmacy-dark select,
+.pharmacy-dark textarea {
+  background-color: #151a21 !important;
+  color: #f8fafc !important;
+  border-color: #64748b !important;
+}
+.pharmacy-dark table {
+  color: #f8fafc;
+}
+.pharmacy-dark thead,
+.pharmacy-dark .bg-slate-800 {
+  background-color: #111827 !important;
+}
+.pharmacy-dark .shadow-xs,
+.pharmacy-dark .shadow-sm,
+.pharmacy-dark .shadow-lg {
+  box-shadow: 0 10px 24px rgba(0,0,0,0.35) !important;
+}
+.pharmacy-dark .rounded-lg,
+.pharmacy-dark .rounded-md {
+  border-radius: 2px !important;
+}
+
+@media print {
+  /* Hide all app chrome during thermal receipt print */
+  body * {
+    visibility: hidden;
+  }
+  .receipt-printable, .receipt-printable * {
+    visibility: visible;
+  }
+  .receipt-printable {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 76mm !important;
+    max-width: 80mm !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 11px !important;
+    line-height: 1.25 !important;
+    color: #000 !important;
+    background: #fff !important;
+  }
+}
